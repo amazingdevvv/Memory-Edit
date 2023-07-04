@@ -16,7 +16,7 @@ int main()
  LPVOID offset;
  cin >> offset;
     
-    int WriteStatus = WriteProcessMemory(process, (LPVOID)offset, &value, (DWORD)sizeof(value), 0);
+    int Writing = WriteProcessMemory(process, (LPVOID)offset, &value, (DWORD)sizeof(value), 0);
     CloseHandle(process);
     return 0;
 
